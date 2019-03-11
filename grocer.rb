@@ -48,10 +48,10 @@ def apply_clearance(cart)
    new_cart
 end
 
-def checkout(cart: [], coupons: [])
+def checkout(cart, coupons)
   # code here
-  cart = consolidate_cart(cart: cart)
-  cart = apply_coupons(cart : cart, coupons: coupons)
+  consolidated_cart = consolidate_cart(cart)
+  couponed_cart = apply_coupons(cart, coupons)
   
   cart.each do |name, info|
    if coupons.nil? && info[:clearance] == false 
