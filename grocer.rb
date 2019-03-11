@@ -56,7 +56,8 @@ def checkout(cart, coupons)
    total = 0 
    cart.each do |item, info|
        total += info[:price] * info[:count]
-       total
+       if total > 100 
+         total = 
      end
    end
 end
