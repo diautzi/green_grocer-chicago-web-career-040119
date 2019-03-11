@@ -60,5 +60,4 @@ def checkout(cart, coupons)
          total = total - (total * 0.1)
          total
      end
-   end
 end
