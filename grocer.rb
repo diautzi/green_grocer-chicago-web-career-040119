@@ -59,4 +59,5 @@ def checkout(cart, coupons)
        total += item[:price] - (item[:price]*0.1)
        total
      end
+   end
 end
