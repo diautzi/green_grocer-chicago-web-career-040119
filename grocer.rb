@@ -53,11 +53,5 @@ def checkout(cart, coupons)
   consolidated_cart = consolidate_cart(cart)
   couponed_cart = apply_coupons(consolidated_cart, coupons)
   final_cart = apply_clearance(couponed_cart)
-
-  cart.each do |name, info|
-   if coupons.nil? && info[:clearance] == false 
-     consolidate_cart(cart)
-     if 
-     
-  end
+   total = 0 
 end
